@@ -11,4 +11,6 @@
     <string name="log_in">Log in</string>
     <string name="title_activity_single_bin_screen">SingleBinScreen</string>
     <string name="title_activity_chemicals">Chemicals</string>
+    <string name="title_activity_field_details">FieldDetails</string>
+    <string name="title_activity_bin_details">BinDetails</string>
 </resources>
