@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
@@ -23,8 +24,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginScreen extends AppCompatActivity {
     private FirebaseAuth mAuth;
-    EditText username;
-    EditText password;
+    EditText emailField;
+    EditText passwordField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +36,8 @@ public class LoginScreen extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        username = (EditText) findViewById(R.id.editText);
-        password = (EditText) findViewById(R.id.editText2);
+        emailField = findViewById(R.id.editText);
+        passwordField = findViewById(R.id.editText2);
 
         Button next = (Button) findViewById(R.id.button);
         next.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +58,12 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     private void createAccount(String email, String password) {
+        Log.d("LoginScreen", "createAccount:" + email);
+
+        if (!validateForm()) {
+            return;
+        }
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                    @Override
@@ -77,11 +84,62 @@ public class LoginScreen extends AppCompatActivity {
                 });
     }
 
+    private void signIn(String email, String password) {
+        Log.d("LoginScreen", "signIn:" + email);
+
+        if (!validateForm()) {
+            return;
+        }
+
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                   @Override
+                   public void onComplete(@NonNull Task<AuthResult> task) {
+                       if (task.isSuccessful()) {
+                           // Sign in success, update UI with the signed-in user's information
+                           Log.d("LoginScreen", "signInWithEmail:success");
+                           FirebaseUser user = mAuth.getCurrentUser();
+                           updateUI(user);
+                       } else {
+                           // If sign in fails, display a message to the user
+                           Log.w("LoginScreen", "signInWithEmail:failure", task.getException());
+                           Toast.makeText(getApplicationContext(), "Authentication failed.",
+                                   Toast.LENGTH_SHORT).show();
+                           updateUI(null);
+                       }
+                   }
+                });
+    }
+
+    private boolean validateForm() {
+        boolean valid = true;
+
+        emailField = findViewById(R.id.editText);
+        String email = emailField.getText().toString();
+        if (TextUtils.isEmpty(email)) {
+            emailField.setError("E-mail required.");
+            valid = false;
+        } else {
+            emailField.setError(null);
+        }
+
+        passwordField = findViewById(R.id.editText2);
+        String password = passwordField.getText().toString();
+        if (TextUtils.isEmpty(password)) {
+            passwordField.setError("Password required.");
+            valid = false;
+        } else {
+            passwordField.setError(null);
+        }
+
+        return valid;
+    }
+
     private void updateUI(FirebaseUser user) {
         if (user != null) {
-            // Put signin method here
+            signIn(emailField.getText().toString(), passwordField.getText().toString());
         } else {
-            // Put create account method here
+            return;
         }
     }
 
