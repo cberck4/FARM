@@ -10,31 +10,40 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="187dp"
-        android:layout_height="62dp"
-        android:text="Find your field."
-        android:textSize="27sp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/search_fields"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="381dp"
-        android:layout_height="156dp"
-        app:srcCompat="@android:drawable/bottom_bar"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="355dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="299dp"
-        android:layout_height="46dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        android:layout_width="247dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="344dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintVertical_bias="0.1" />
+
 </android.support.constraint.ConstraintLayout>
