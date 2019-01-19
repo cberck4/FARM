@@ -5,4 +5,8 @@
     <string name="title_activity_field_menu">FieldMenu</string>
     <string name="title_activity_bin_menu">BinMenu</string>
     <string name="title_activity_single_field_screen">SingleFieldScreen</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="logo">Logo</string>
+    <string name="log_in">Log in</string>
 </resources>
