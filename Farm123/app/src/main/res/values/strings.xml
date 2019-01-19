@@ -9,4 +9,6 @@
     <string name="password">Password</string>
     <string name="logo">Logo</string>
     <string name="log_in">Log in</string>
+    <string name="title_activity_single_bin_screen">SingleBinScreen</string>
+    <string name="title_activity_chemicals">Chemicals</string>
 </resources>
