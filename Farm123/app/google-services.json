@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "401343968582",
+    "firebase_url": "https://cornhacks-2019-8f593.firebaseio.com",
+    "project_id": "cornhacks-2019-8f593",
+    "storage_bucket": "cornhacks-2019-8f593.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401343968582:android:37d8ebb02f4bb774",
+        "android_client_info": {
+          "package_name": "com.example.pappy_000.farm123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401343968582-50oeedscqcc3c7sg8id2koecbseslhbb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pappy_000.farm123",
+            "certificate_hash": "a6bec417852b9dc0837497fe09d738c4df0c3857"
+          }
+        },
+        {
+          "client_id": "401343968582-jmj10hls1eujepd5aeme8v40ivsvd1t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4HuuqhXi7Ok1n3rfdDTtwev8nOPV_ftY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401343968582-jmj10hls1eujepd5aeme8v40ivsvd1t9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
