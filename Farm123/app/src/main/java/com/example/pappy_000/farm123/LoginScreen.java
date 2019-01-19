@@ -50,8 +50,6 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     }
 
     private void createAccount(String email, String password) {
-        Log.d("LoginScreen", "createAccount:" + email);
-
         if (!validateForm()) {
             return;
         }
@@ -61,13 +59,9 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
                    @Override
                    public void onComplete(@NonNull Task<AuthResult> task) {
                        if (task.isSuccessful()) {
-                           // Sign in success, update UI with the signed-in user's information
-                           Log.d("LoginScreen", "createUserWithEmail:success");
                            FirebaseUser user = mAuth.getCurrentUser();
                            updateUI(user);
                        } else {
-                           // If sign in fails, display a message to the user
-                           Log.w("LoginScreen", "createUserWithEmail:failure", task.getException());
                            Toast.makeText(getApplicationContext(), "Authentication failed.",
                                    Toast.LENGTH_SHORT).show();
                            updateUI(null);
@@ -77,8 +71,6 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     }
 
     private void signIn(String email, String password) {
-        Log.d("LoginScreen", "signIn:" + email);
-
         if (!validateForm()) {
             return;
         }
@@ -88,15 +80,12 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
                    @Override
                    public void onComplete(@NonNull Task<AuthResult> task) {
                        if (task.isSuccessful()) {
-                           // Sign in success, update UI with the signed-in user's information
-                           Log.d("LoginScreen", "signInWithEmail:success");
                            FirebaseUser user = mAuth.getCurrentUser();
                            //updateUI(user);
                            Toast.makeText(getApplicationContext(), "Logging in...",
                                    Toast.LENGTH_SHORT).show();
+                           startActivity(new Intent(LoginScreen.this, MainMenu.class));
                        } else {
-                           // If sign in fails, display a message to the user
-                           Log.w("LoginScreen", "signInWithEmail:failure", task.getException());
                            Toast.makeText(getApplicationContext(), "Authentication failed.",
                                    Toast.LENGTH_SHORT).show();
                            updateUI(null);
@@ -111,7 +100,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         emailField = findViewById(R.id.emailBox);
         String email = emailField.getText().toString();
         if (TextUtils.isEmpty(email)) {
-            emailField.setError("E-mail required.");
+            emailField.setError("E-mail required");
             valid = false;
         } else {
             emailField.setError(null);
@@ -120,7 +109,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         passwordField = findViewById(R.id.passwordBox);
         String password = passwordField.getText().toString();
         if (TextUtils.isEmpty(password)) {
-            passwordField.setError("Password required.");
+            passwordField.setError("Password required");
             valid = false;
         } else {
             passwordField.setError(null);

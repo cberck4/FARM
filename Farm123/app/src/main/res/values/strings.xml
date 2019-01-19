@@ -13,9 +13,6 @@
     <string name="title_activity_chemicals">Chemicals</string>
     <string name="title_activity_field_details">FieldDetails</string>
     <string name="title_activity_bin_details">BinDetails</string>
-<<<<<<< HEAD
     <string name="search_fields">Search Fields</string>
-=======
     <string name="create_account">Create Account</string>
->>>>>>> 147f338aa7ffe470323ea56e67c3dfd28595c560
 </resources>
