@@ -44,9 +44,6 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
     }
 
     private void createAccount(String email, String password) {
@@ -60,11 +57,9 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
                    public void onComplete(@NonNull Task<AuthResult> task) {
                        if (task.isSuccessful()) {
                            FirebaseUser user = mAuth.getCurrentUser();
-                           updateUI(user);
                        } else {
                            Toast.makeText(getApplicationContext(), "Authentication failed.",
                                    Toast.LENGTH_SHORT).show();
-                           updateUI(null);
                        }
                    }
                 });
@@ -81,14 +76,10 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
                    public void onComplete(@NonNull Task<AuthResult> task) {
                        if (task.isSuccessful()) {
                            FirebaseUser user = mAuth.getCurrentUser();
-                           //updateUI(user);
-                           Toast.makeText(getApplicationContext(), "Logging in...",
-                                   Toast.LENGTH_SHORT).show();
                            startActivity(new Intent(LoginScreen.this, MainMenu.class));
                        } else {
                            Toast.makeText(getApplicationContext(), "Authentication failed.",
                                    Toast.LENGTH_SHORT).show();
-                           updateUI(null);
                        }
                    }
                 });
@@ -116,14 +107,6 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
         }
 
         return valid;
-    }
-
-    private void updateUI(FirebaseUser user) {
-        if (user != null) {
-            signIn(emailField.getText().toString(), passwordField.getText().toString());
-        } else {
-            return;
-        }
     }
 
     @Override
