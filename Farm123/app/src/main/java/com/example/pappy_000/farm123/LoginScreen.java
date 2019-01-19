@@ -1,5 +1,6 @@
 package com.example.pappy_000.farm123;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,8 +9,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class LoginScreen extends AppCompatActivity {
+    EditText username;
+    EditText password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +22,18 @@ public class LoginScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        username = (EditText) findViewById(R.id.editText);
+        password = (EditText) findViewById(R.id.editText2);
+
+        Button next = (Button) findViewById(R.id.button);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginScreen.this, MainMenu.class));
+            }
+
+        });
     }
 
     @Override
