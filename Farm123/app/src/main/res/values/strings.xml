@@ -4,4 +4,5 @@
     <string name="title_activity_main_menu">MainMenu</string>
     <string name="title_activity_field_menu">FieldMenu</string>
     <string name="title_activity_bin_menu">BinMenu</string>
+    <string name="title_activity_single_field_screen">SingleFieldScreen</string>
 </resources>
