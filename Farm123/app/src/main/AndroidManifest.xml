@@ -42,6 +42,14 @@
         <activity
             android:name=".Chemicals"
             android:label="@string/title_activity_chemicals"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FieldDetails"
+            android:label="@string/title_activity_field_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BinDetails"
+            android:label="@string/title_activity_bin_details"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
