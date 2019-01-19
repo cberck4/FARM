@@ -8,4 +8,33 @@
     tools:context=".FieldMenu"
     tools:showIn="@layout/activity_field_menu">
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="187dp"
+        android:layout_height="62dp"
+        android:text="Find your field."
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="381dp"
+        android:layout_height="156dp"
+        app:srcCompat="@android:drawable/bottom_bar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="355dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="299dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </android.support.constraint.ConstraintLayout>
