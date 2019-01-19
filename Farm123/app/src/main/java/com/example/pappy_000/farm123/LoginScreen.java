@@ -22,7 +22,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LoginScreen extends AppCompatActivity {
+public class LoginScreen extends AppCompatActivity implements View.OnClickListener{
     private FirebaseAuth mAuth;
     EditText emailField;
     EditText passwordField;
@@ -140,6 +140,14 @@ public class LoginScreen extends AppCompatActivity {
             signIn(emailField.getText().toString(), passwordField.getText().toString());
         } else {
             return;
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        int i = v.getId();
+        if (i == R.id.button) {
+            signIn(emailField.getText().toString(), passwordField.getText().toString());
         }
     }
 
