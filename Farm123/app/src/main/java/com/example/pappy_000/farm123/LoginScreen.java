@@ -3,8 +3,6 @@ package com.example.pappy_000.farm123;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -22,7 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LoginScreen extends AppCompatActivity {
+public class LoginScreen extends AppCompatActivity implements View.OnClickListener{
     private FirebaseAuth mAuth;
     EditText emailField;
     EditText passwordField;
@@ -31,22 +29,16 @@ public class LoginScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        findViewById(R.id.loginButton).setOnClickListener(this);
+        findViewById(R.id.createAccount).setOnClickListener(this);
 
         mAuth = FirebaseAuth.getInstance();
 
-        emailField = findViewById(R.id.editText);
-        passwordField = findViewById(R.id.editText2);
-
-        Button next = (Button) findViewById(R.id.button);
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginScreen.this, MainMenu.class));
-            }
-
-        });
+        emailField = findViewById(R.id.emailBox);
+        passwordField = findViewById(R.id.passwordBox);
     }
 
     @Override
@@ -99,7 +91,9 @@ public class LoginScreen extends AppCompatActivity {
                            // Sign in success, update UI with the signed-in user's information
                            Log.d("LoginScreen", "signInWithEmail:success");
                            FirebaseUser user = mAuth.getCurrentUser();
-                           updateUI(user);
+                           //updateUI(user);
+                           Toast.makeText(getApplicationContext(), "Logging in...",
+                                   Toast.LENGTH_SHORT).show();
                        } else {
                            // If sign in fails, display a message to the user
                            Log.w("LoginScreen", "signInWithEmail:failure", task.getException());
@@ -114,7 +108,7 @@ public class LoginScreen extends AppCompatActivity {
     private boolean validateForm() {
         boolean valid = true;
 
-        emailField = findViewById(R.id.editText);
+        emailField = findViewById(R.id.emailBox);
         String email = emailField.getText().toString();
         if (TextUtils.isEmpty(email)) {
             emailField.setError("E-mail required.");
@@ -123,7 +117,7 @@ public class LoginScreen extends AppCompatActivity {
             emailField.setError(null);
         }
 
-        passwordField = findViewById(R.id.editText2);
+        passwordField = findViewById(R.id.passwordBox);
         String password = passwordField.getText().toString();
         if (TextUtils.isEmpty(password)) {
             passwordField.setError("Password required.");
@@ -140,6 +134,16 @@ public class LoginScreen extends AppCompatActivity {
             signIn(emailField.getText().toString(), passwordField.getText().toString());
         } else {
             return;
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        int i = v.getId();
+        if (i == R.id.loginButton) {
+            signIn(emailField.getText().toString(), passwordField.getText().toString());
+        } else if (i == R.id.createAccount) {
+            createAccount(emailField.getText().toString(), passwordField.getText().toString());
         }
     }
 
