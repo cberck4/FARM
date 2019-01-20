@@ -25,7 +25,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FieldMenu"
-            android:label="@string/title_activity_field_menu"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BinMenu"
@@ -45,7 +45,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FieldDetails"
-            android:label=""
+            android:label="Grandma's Field"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FieldMaps"
