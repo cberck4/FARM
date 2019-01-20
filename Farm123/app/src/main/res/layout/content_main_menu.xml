@@ -8,18 +8,28 @@
     tools:context=".MainMenu"
     tools:showIn="@layout/activity_main_menu">
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_back"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="123dp"
         android:layout_height="79dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:src="@drawable/corn_field"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.316"
-        tools:srcCompat="@tools:sample/backgrounds/scenic[4]" />
+        tools:src="@drawable/corn_field" />
 
     <TextView
         android:id="@+id/Fields"
@@ -56,11 +66,16 @@
         android:layout_height="90dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grain_bin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Storage"
-        app:layout_constraintVertical_bias="0.265"
-        tools:srcCompat="@tools:sample/backgrounds/scenic[12]" />
+        app:layout_constraintVertical_bias="0.265" />
+
+
+
+
 </android.support.constraint.ConstraintLayout>
