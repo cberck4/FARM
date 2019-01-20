@@ -127,5 +127,9 @@
     <string name="crop">Crop:</string>
     <string name="binimage">binImage</string>
     <string name="expires">Expires:</string>
+    <string name="february_23_2019">February 23, 2019</string>
+    <string name="october_25_2018">October 25, 2018</string>
+    <string name="_12_950">12,950</string>
+    <string name="corn">Corn</string>
 
 </resources>
