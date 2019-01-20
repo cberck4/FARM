@@ -14,7 +14,7 @@ EZ Farming is an Android mobile app that allows farmers to keep track of various
 
 * **Christian Berck** - *Manager/Layout Integrater* 
 * **Tysen Corwin** - *Graphic Designer/Artist* 
-* **Christian Berck** - *Manager/Layout Integrater* 
+* **Chris Burbach** - *Database Integration Lead* 
 
 
 ## Thank You!
