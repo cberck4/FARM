@@ -48,8 +48,8 @@
             android:label="@string/title_activity_field_details"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ChemicalScroll"
-            android:label="@string/title_activity_chemical_scroll"
+            android:name=".ChemicalsListView"
+            android:label="@string/title_activity_chemicals_list_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".FieldMaps"
