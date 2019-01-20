@@ -15,4 +15,5 @@
     <string name="title_activity_bin_details">BinDetails</string>
     <string name="search_fields">Search Fields</string>
     <string name="create_account">Create Account</string>
+    <string name="enter">Enter</string>
 </resources>
