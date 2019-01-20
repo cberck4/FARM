@@ -16,7 +16,6 @@
     <string name="search_fields">Search Fields</string>
     <string name="create_account">Create Account</string>
     <string name="enter">Enter</string>
-<<<<<<< HEAD
     <string name="title_activity_chemical_scroll">ChemicalScroll</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -107,9 +106,12 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-=======
+
     <string name="background">background</string>
     <string name="find_your_bin">Find your bin</string>
     <string name="search_bins">Search Bins</string>
->>>>>>> 8ffabf71c4f004f7d9eba754d8babfc380237b54
+    <string name="title_activity_chemicals_list_view">ChemicalsListView</string>
+    <string name="chemical_name">Chemical Name</string>
+    <string name="date_sprayed">Date Sprayed</string>
+
 </resources>

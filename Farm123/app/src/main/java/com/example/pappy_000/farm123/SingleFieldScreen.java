@@ -30,7 +30,7 @@ public class SingleFieldScreen extends AppCompatActivity {
         chems.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SingleFieldScreen.this, ChemicalScroll.class));
+                startActivity(new Intent(SingleFieldScreen.this, ChemicalsListView.class));
             }
 
         });
