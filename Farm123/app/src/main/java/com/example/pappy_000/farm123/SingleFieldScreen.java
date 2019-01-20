@@ -8,9 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
-
-import com.example.pappy_000.farm123.FieldMenu;
 
 public class SingleFieldScreen extends AppCompatActivity {
     String fieldName = FieldMenu.selectedField;
@@ -40,6 +39,14 @@ public class SingleFieldScreen extends AppCompatActivity {
            public void onClick(View v) {
                startActivity(new Intent(SingleFieldScreen.this, FieldDetails.class));
            }
+        });
+
+        ImageButton fieldMap = findViewById(R.id.imageButton3);
+        fieldMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SingleFieldScreen.this, FieldMaps.class));
+            }
         });
     }
 
