@@ -19,7 +19,7 @@ public class MainMenu extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        ImageButton next = findViewById(R.id.imageButton);
+        Button next = findViewById(R.id.imageButton);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,7 +27,7 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        ImageButton next2 = findViewById(R.id.imageButton2);
+        Button next2 = findViewById(R.id.imageButton2);
         next2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

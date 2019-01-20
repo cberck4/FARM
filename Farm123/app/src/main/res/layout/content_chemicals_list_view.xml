@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="0.311" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/addButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -117,7 +117,50 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias=".97"
+        app:layout_constraintVertical_bias=".99"
         app:srcCompat="@drawable/baseline_add_black_18dp" />
+
+    <EditText
+        android:id="@+id/chemName"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:background="#e6e6e6"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chemDay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listy"
+        app:layout_constraintVertical_bias=".2"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/chemDay"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:background="#e6e6e6"
+        android:ems="10"
+        android:hint="@string/plaindate"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chemName"
+        app:layout_constraintTop_toBottomOf="@+id/listy2"
+        app:layout_constraintVertical_bias=".2" tools:targetApi="o" />
 
 </android.support.constraint.ConstraintLayout>

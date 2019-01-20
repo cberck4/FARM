@@ -57,6 +57,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
                    public void onComplete(@NonNull Task<AuthResult> task) {
                        if (task.isSuccessful()) {
                            FirebaseUser user = mAuth.getCurrentUser();
+                           Toast.makeText(getApplicationContext(), "Creation successful!",
+                                   Toast.LENGTH_SHORT).show();
                        } else {
                            Toast.makeText(getApplicationContext(), "Authentication failed.",
                                    Toast.LENGTH_SHORT).show();

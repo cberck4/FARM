@@ -43,6 +43,10 @@
     <string name="_12_950">12,950</string>
     <string name="corn">Corn</string>
     <string name="textview">TextView</string>
+    <string name="plaindate">Date</string>
+    <string name="name">Name</string>
     <string name="chemical">Chemical</string>
+    <string name="fields">Fields</string>
+    <string name="storage">Storage</string>
 
 </resources>
