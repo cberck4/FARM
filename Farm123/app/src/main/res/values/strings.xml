@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EZ Farm</string>
+    <string name="app_name">EZ Farming</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main_menu">Main Menu</string>
     <string name="title_activity_field_menu">Field Menu</string>
