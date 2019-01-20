@@ -22,67 +22,52 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="123dp"
+        android:layout_width="276dp"
         android:layout_height="79dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/background"
         android:scaleType="fitXY"
         android:src="@drawable/corn_field"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316"
+        app:layout_constraintVertical_bias="0.662"
         tools:src="@drawable/corn_field" />
 
-    <TextView
-        android:id="@+id/Fields"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Fields"
-        android:textColor="#ffffff"
-        android:textSize="33sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
-
-    <TextView
-        android:id="@+id/Storage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Storage"
-        android:textColor="#ffffff"
-        android:textSize="33sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:layout_constraintVertical_bias="0.085" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="91dp"
+        android:layout_width="280dp"
         android:layout_height="90dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/background"
-        android:scaleType="fitCenter"
+        android:scaleType="fitXY"
         android:src="@drawable/grain_bin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Storage"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
-
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="361dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037"
+        android:src="@drawable/text" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -30,7 +30,7 @@ public class FieldMaps extends FragmentActivity implements OnMapReadyCallback {
 
         LatLng location = new LatLng(41, -97);
         mMap.addMarker(new MarkerOptions().position(location).title(fieldName));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(location));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 10.0f));
     }
 
 }
