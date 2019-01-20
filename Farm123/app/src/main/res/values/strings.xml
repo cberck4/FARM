@@ -20,4 +20,8 @@
     <string name="background">background</string>
     <string name="find_your_bin">Find your bin</string>
     <string name="search_bins">Search Bins</string>
+    <string name="south_80">South-80</string>
+    <string name="field_details">Field Details</string>
+    <string name="chemicals">Chemicals</string>
+    <string name="details">details</string>
 </resources>
