@@ -44,6 +44,10 @@
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".FieldDetails"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".FieldMaps"
             android:label="FieldMaps"
             android:theme="@style/AppTheme.NoActionBar"></activity>
