@@ -8,24 +8,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.pappy_000.farm123.FieldMenu;
 
 public class SingleFieldScreen extends AppCompatActivity {
+    String fieldName = FieldMenu.selectedField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_field_screen);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        TextView fieldTitle = findViewById(R.id.textView);
+        fieldTitle.setText(fieldName);
+
         Button chems = findViewById(R.id.button2);
         chems.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +32,14 @@ public class SingleFieldScreen extends AppCompatActivity {
                 startActivity(new Intent(SingleFieldScreen.this, ChemicalsListView.class));
             }
 
+        });
+
+        Button details = findViewById(R.id.button3);
+        details.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               startActivity(new Intent(SingleFieldScreen.this, FieldDetails.class));
+           }
         });
     }
 

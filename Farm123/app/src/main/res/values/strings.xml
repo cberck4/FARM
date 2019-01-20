@@ -114,4 +114,11 @@
     <string name="chemical_name">Chemical Name</string>
     <string name="date_sprayed">Date Sprayed</string>
 
+
+
+    <string name="south_80">South-80</string>
+    <string name="field_details">Field Details</string>
+    <string name="chemicals">Chemicals</string>
+    <string name="details">details</string>
+
 </resources>
