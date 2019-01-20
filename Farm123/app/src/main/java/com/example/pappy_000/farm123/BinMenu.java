@@ -7,7 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinMenu extends AppCompatActivity {
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    List<String> spinnerArray = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
