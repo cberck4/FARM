@@ -33,7 +33,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.105"
-        tools:textSize="33sp" />
+        android:textSize="33sp" />
 
     <Button
         android:id="@+id/button"
