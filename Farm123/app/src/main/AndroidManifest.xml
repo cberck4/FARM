@@ -29,15 +29,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BinMenu"
-            android:label="@string/title_activity_bin_menu"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SingleFieldScreen"
-            android:label="@string/title_activity_single_field_screen"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SingleBinScreen"
-            android:label="@string/title_activity_single_bin_screen"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Chemicals"
@@ -45,11 +45,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FieldDetails"
-            android:label="@string/title_activity_field_details"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ChemicalsListView"
-            android:label="@string/title_activity_chemicals_list_view"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".FieldMaps"

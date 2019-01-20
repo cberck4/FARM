@@ -109,7 +109,7 @@
 
     <string name="background">background</string>
     <string name="find_your_bin">Find your bin</string>
-    <string name="search_bins">Search Bins</string>
+    <string name="search_bins">Search Storage</string>
     <string name="title_activity_chemicals_list_view">ChemicalsListView</string>
     <string name="chemical_name">Chemical Name</string>
     <string name="date_sprayed">Date Sprayed</string>
