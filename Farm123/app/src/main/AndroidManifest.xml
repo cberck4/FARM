@@ -40,17 +40,9 @@
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Chemicals"
-            android:label="@string/title_activity_chemicals"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".FieldDetails"
-            android:label=""
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".ChemicalsListView"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".FieldMaps"
             android:label="FieldMaps"
