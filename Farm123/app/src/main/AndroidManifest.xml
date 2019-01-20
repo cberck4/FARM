@@ -48,13 +48,16 @@
             android:label="@string/title_activity_field_details"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".BinDetails"
-            android:label="@string/title_activity_bin_details"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".ChemicalsListView"
             android:label="@string/title_activity_chemicals_list_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".FieldMaps"
+            android:label="FieldMaps"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA6KniNt9FH1nOuy3isxFxpy6DtURe0j84"/>
     </application>
 
 </manifest>
