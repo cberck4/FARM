@@ -38,6 +38,40 @@
         app:layout_constraintVertical_bias="0.662"
         tools:src="@drawable/corn_field" />
 
+<<<<<<< HEAD
+=======
+    <TextView
+        android:id="@+id/Fields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Fields"
+        android:textColor="#ffffff"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <TextView
+        android:id="@+id/Storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Storage"
+        android:textColor="#ffffff"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintVertical_bias="0.085" />
+
+>>>>>>> 666408a2cca05e62a76edaa93507d0217ddb9e48
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="280dp"
