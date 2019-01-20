@@ -27,16 +27,27 @@ public class FieldDetails extends AppCompatActivity {
         right = (ListView) findViewById(R.id.rightlist);
 
         List<String> your_array_list321 = new ArrayList<String>();
-        your_array_list321.add("foo");
-        your_array_list321.add("bar");
+        your_array_list321.add("Crop:");
+        your_array_list321.add("Previous Crop:");
+        your_array_list321.add("Size:");
+
+        List<String> your_array_list3211 = new ArrayList<String>();
+        your_array_list3211.add("");
+        your_array_list3211.add("Corn");
+        your_array_list3211.add("Soybeans");
+        your_array_list3211.add("124 Acres");
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_list_item_1,
                 your_array_list321 );
+        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(
+                this,
+                android.R.layout.simple_list_item_1,
+                your_array_list3211 );
 
         left.setAdapter(arrayAdapter);
-        right.setAdapter(arrayAdapter);
+        right.setAdapter(arrayAdapter2);
     }
 
 }
