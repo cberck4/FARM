@@ -5,8 +5,8 @@ EZ Farming is an Android mobile app that allows farmers to keep track of various
 ## Built With
 
 * [Android Studio](https://developer.android.com/studio/) - Integrated developer Environment
-* [Firebase](https://maven.apache.org/) - Database/User Authentication 
-* [Google Maps API](https://rometools.github.io/rome/) - Used to locate crop fields
+* [Firebase](https://firebase.google.com/) - Database/User Authentication 
+* [Google Maps API](https://developers.google.com/maps) - Used to locate crop fields
 
 
 
