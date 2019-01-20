@@ -25,6 +25,8 @@ public class FieldMenu extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     List<String> spinnerArray =  new ArrayList<>();
 
+    public static String selectedField;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,7 @@ public class FieldMenu extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                selectedField = sItems.getSelectedItem().toString();
                 startActivity(new Intent(FieldMenu.this, SingleFieldScreen.class));
             }
 
@@ -62,7 +65,7 @@ public class FieldMenu extends AppCompatActivity {
 
     private void fetchValues(final ArrayAdapter<String> adapter) {
         Toast.makeText(getApplicationContext(), "Fetching Data",
-                Toast.LENGTH_LONG).show();
+                Toast.LENGTH_SHORT).show();
         db.collection("fields")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
