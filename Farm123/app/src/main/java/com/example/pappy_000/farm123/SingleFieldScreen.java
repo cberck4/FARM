@@ -1,11 +1,13 @@
 package com.example.pappy_000.farm123;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 public class SingleFieldScreen extends AppCompatActivity {
 
@@ -23,6 +25,14 @@ public class SingleFieldScreen extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
+        });
+        Button chems = findViewById(R.id.button2);
+        chems.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SingleFieldScreen.this, ChemicalScroll.class));
+            }
+
         });
     }
 
