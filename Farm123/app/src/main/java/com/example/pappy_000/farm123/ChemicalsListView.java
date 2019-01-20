@@ -14,6 +14,7 @@ import java.util.List;
 
 public class ChemicalsListView extends AppCompatActivity {
     private ListView lv;
+    private ListView lv2;
 
 
     @Override
@@ -24,17 +25,27 @@ public class ChemicalsListView extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         lv = (ListView) findViewById(R.id.listy);
+        lv2 = (ListView) findViewById(R.id.listy2);
 
         List<String> your_array_list = new ArrayList<String>();
-        your_array_list.add("foo");
-        your_array_list.add("bar");
+        your_array_list.add("Herbicide");
+        your_array_list.add("Pesticide");
+
+        List<String> your_array_list2 = new ArrayList<String>();
+        your_array_list2.add("June 8, 2018");
+        your_array_list2.add("July 7, 2018");
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_list_item_1,
                 your_array_list );
 
+        ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(
+                this,
+                android.R.layout.simple_list_item_1,
+                your_array_list2 );
         lv.setAdapter(arrayAdapter);
+        lv2.setAdapter(arrayAdapter2);
 
 
     }
