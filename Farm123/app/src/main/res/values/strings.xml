@@ -120,5 +120,12 @@
     <string name="field_details">Field Details</string>
     <string name="chemicals">Chemicals</string>
     <string name="details">details</string>
+    <string name="exp_date">Exp. Date:</string>
+    <string name="date">Date:</string>
+    <string name="bushels">Bushels:</string>
+    <string name="binname">BinName</string>
+    <string name="crop">Crop:</string>
+    <string name="binimage">binImage</string>
+    <string name="expires">Expires:</string>
 
 </resources>
