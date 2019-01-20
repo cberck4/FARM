@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">EZ Farming</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_main_menu">MainMenu</string>
-    <string name="title_activity_field_menu">FieldMenu</string>
-    <string name="title_activity_bin_menu">BinMenu</string>
-    <string name="title_activity_single_field_screen">SingleFieldScreen</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+    <string name="title_activity_field_menu">Field Menu</string>
+    <string name="title_activity_bin_menu">Bin Menu</string>
+    <string name="title_activity_single_field_screen">Single Field Screen</string>
     <string name="e_mail">E-mail</string>
     <string name="password">Password</string>
     <string name="logo">Logo</string>
@@ -16,6 +16,7 @@
     <string name="search_fields">Search Fields</string>
     <string name="create_account">Create Account</string>
     <string name="enter">Enter</string>
+<<<<<<< HEAD
     <string name="title_activity_chemical_scroll">ChemicalScroll</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
@@ -106,4 +107,9 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+=======
+    <string name="background">background</string>
+    <string name="find_your_bin">Find your bin</string>
+    <string name="search_bins">Search Bins</string>
+>>>>>>> 8ffabf71c4f004f7d9eba754d8babfc380237b54
 </resources>

@@ -28,10 +28,11 @@
         android:layout_height="45dp"
         android:layout_marginBottom="344dp"
 
-        android:popupBackground="#aaa"
+        android:background="#e5e5e5"
+        android:popupBackground="#e5e5e5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
